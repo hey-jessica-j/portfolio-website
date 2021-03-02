@@ -1,0 +1,107 @@
+<!doctype html5>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!-- JQUERY Link-->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+  <!--Custom Styles-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&family=Merriweather:wght@700&family=Seymour+One&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+
+<header>
+      <nav class="nav-bar">
+          <ul>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#work">Work</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+      </nav>
+</header>
+
+<main>
+  <section id="portfolio">
+    <div class="content-wrapper">
+      <div class="portfolio-project-selector">
+        <p>Let me show you what I've done so far </p>
+        <div class="portfolio-buttons">
+          <button onClick="updatePortfolio('rougePickings')">Rouge Pickings - Landing Page </button>
+          <button onClick="updatePortfolio('unplugged')">Unplugged - Landing Page</button>
+          <button onClick="updatePortfolio('lolClock')">LOL Clock</button>
+          <button onClick="updatePortfolio('magic8Ball')">Magic-8-Ball</button>
+          <button onClick="updatePortfolio('colorButton')">Pick a Color</button>
+          <button><a id="portfolio-go-button" href= ""  target="_blank">Want to see it. Click here.</a></button>
+        </div>
+        <div id="portfolio-viewer">
+          <img id="portfolio-image-one" alt="" src=""/>
+          <img id="portfolio-image-two" alt="" src=""/>
+          <img id="portfolio-image-three" alt="" src=""/>
+          <img id="portfolio-image-four" alt="" src=""/>
+          <p id="portfolio-text">This is what i've done so far...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="content-wrapper">
+    <div class="footer-content">
+      <div class="jessica-picture">
+        <img id="jessica-pic" src ="" alt="Picture of Jessica">
+      </div>
+      <div class="name">
+        <h4>Jessica Jennings</h4>
+      </div>
+      <div class="resume-link">
+        <p><a href="" target="_blank">Resume Download</a></p>
+      </div>
+      <div class="social-icons">
+        <p><a href="mailto:hellojessicajennings@gmail.com"><img src="../img/email-icon.png" alt="mail icon"></a></p>
+        <p><a href="https://www.linkedin.com/in/jessica-jennings-48a64baa" target="_blank"><img src="../img/linkedin-icon.png" alt="LinkedIn icon"></a></p>
+        <p><a href="https://www.github.com/hey-jessica-j" target="_blank"><img src="../img/github-icon.png" alt="Github icon"></a></p>
+        <p><a href="https://repl.it/@heyJessicaJ" target="_blank"><img src="../img/replit-icon.png" alt="Replit icon"></a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/portfolio.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
